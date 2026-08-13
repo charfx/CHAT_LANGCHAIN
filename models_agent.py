@@ -17,7 +17,7 @@ for token,metadata in agent.stream(
         },
         stream_mode="messages",
     ):
-    if token.content :
-        print(token.content ,end="",flush=True) # type: ignore
+    print(token.content ,end="",flush=True) # type: ignore
+        
 
 
