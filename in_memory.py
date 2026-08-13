@@ -13,9 +13,9 @@ configurat={"configurable":{"thread_id":"1"}}
 agent=create_agent(model=LLM,tools=[],checkpointer=InMemorySaver())
 
 
-response=agent.invoke({"messages":[HumanMessage(content="my favorite color is red")]},configurat)
-print(response["messages"][-1].content)
+#response=agent.invoke({"messages":[HumanMessage(content="my favorite color is red")]},configurat)
+#print(response["messages"][-1].content)
 
 ##second call to see the memory effect :
-response2=agent.invoke({"messages":[HumanMessage(content="what is my favorite color")]},configurat)
-print(response2["messages"][-1].content)
+#response2=agent.invoke({"messages":[HumanMessage(content="what is my favorite color")]},configurat)
+#print(response2["messages"][-1].content)
